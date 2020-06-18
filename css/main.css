@@ -1,0 +1,160 @@
+@import "reset.css";
+
+*{
+  box-sizing: border-box;
+}
+html{
+  background: #a82c24; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #a82c24 0%, #904827 25%, #ce4b43 50%, #f7a059 75%, #fefefe 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #a82c24 0%,#904827 25%,#ce4b43 50%,#f7a059 75%,#fefefe 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #a82c24 0%,#904827 25%,#ce4b43 50%,#f7a059 75%,#fefefe 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  font-size: 10px;
+}
+body{
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+  text-align: center;
+  margin: 0;
+}
+h1{
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+@media (max-width: 460px){
+  h1{
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+}
+h2{
+  font-size: 2.25rem;
+  margin: 50px 0;
+  text-align: center;
+}
+a{
+  color: #df0100;
+}
+a:visited{
+  color: #f7a059;
+}
+#main{
+  margin: 30px 8px;
+  padding: 15px;
+  border-radius: 6px;
+  background: #e0dbd9;
+}
+@media (max-width: 460px){
+  #main{
+    margin: 0;
+  }
+}
+#image{
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+#img-div {
+  background: white;
+  padding: 10px;
+  margin: 0;
+}
+#img-caption{
+  margin: 15px 0 5px 0;
+}
+@media (max-width: 460px){
+  #img-caption{
+    font-size: 1.2rem;
+  }
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  background-color: white;
+}
+.book-slides{
+  display: none;
+}
+.book-img{
+  max-width: 100%;
+  height: auto;
+  margin: 50px auto;
+  padding: 15px;
+  display: block;
+}
+#arrow-keys{
+  margin: 50px auto;
+  position: relative;
+  top: 50px;
+}
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  width: auto;
+  margin: -22px auto 50px auto;
+  padding: 16px;
+  color: #df0100;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s ease-in-out;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(247,160,89,0.8);
+}
+/* Caption text */
+.text {
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #df0100;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
