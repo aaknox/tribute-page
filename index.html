@@ -15,6 +15,62 @@
   <script src="js/main.js"></script>
 </head>
 <body>
-  Hello World
+  <main id="main">
+    <h1 id="title">Dr. Maya Angelou</h1>
+    <p>The Woman With the Way of Words</p>
+    <figure id="img-div">
+      <img id="image" src="https://www.gannett-cdn.com/-mm-/a0666bbc7cf0321038277471f57c92bd680559c4/c=0-314-1370-1087/local/-/media/USATODAY/GenericImages/2014/05/28//1401284180000-XXX-ANGELOU-MOM-BOOKS-2370.jpg?width=660&height=373&fit=crop&format=pjpg&auto=webp" alt="A portrait photo of Maya for USA Today">
+      <figcaption id="img-caption">American Author and Poet Maya Angelou</figcaption>
+    </figure>
+    <section id="tribute-info">
+      <h2>Here is some of Maya's most famous works:</h2>
+      <div class="slideshow-container">
+        <div class="book-slides fade">
+          <div class="numbertext">1 / 5</div>
+          <img class="book-img" src="https://images3.penguinrandomhouse.com/cover/9780812980028">
+          <div class="text">I Know Why the Caged Bird Sings</div>
+        </div>
+        
+        <div class="book-slides fade">
+          <div class="numbertext">2 / 5</div>
+          <img class="book-img" src="https://images2.penguinrandomhouse.com/cover/9780375504068">
+          <div class="text">Phenomenal Woman</div>
+        </div>
+        
+        <div class="book-slides fade">
+          <div class="numbertext">3 / 5</div>
+          <img class="book-img" src="https://images1.penguinrandomhouse.com/cover/9780375825675">
+          <div class="text">My Painted House, My Friendly Chicken, and Me</div>
+        </div>
+        
+        <div class="book-slides fade">
+          <div class="numbertext">4 / 5</div>
+          <img class="book-img" src="https://images4.penguinrandomhouse.com/cover/9780307833242">
+          <div class="text">Shaker, Why Don't You Sing?</div>
+        </div>
+        
+        <div class="book-slides fade">
+          <div class="numbertext">5 / 5</div>
+          <img class="book-img" src="https://images4.penguinrandomhouse.com/cover/9780812980325">
+          <div class="text">The Heart of a Woman</div>
+        </div>
+        
+        <div id="arrow-keys">
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next"onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </div>
+      <br>
+      <!-- The dots/circles -->
+      <div class="dot-container"style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+    </section>
+    <h2>For more information on Dr. Maya Angelou, please visit <a id="tribute-link" href="https://www.mayaangelou.com/" target="_blank">her offical page</a>.</h2>
+  </main>
 </body>
 </html>
